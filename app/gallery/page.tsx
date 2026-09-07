@@ -38,13 +38,6 @@ export async function generateMetadata({
     title: `${client.name} Galerie | Photos presse et médias`,
     description: client.pressKit.gallery.description,
     image: client.gallery[0]?.src ?? client.seo.ogImage,
-    keywords: [
-      `${client.slug} galerie`,
-      "photos presse DJ",
-      "kit média artiste",
-      "visuels presse",
-      `galerie DJ ${client.city}`,
-    ],
     imageAlt: client.gallery[0]?.alt ?? `Visuel galerie de ${client.name}`,
   });
 }

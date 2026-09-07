@@ -407,7 +407,7 @@ const piratePressKit: PressKitConfig = {
     "eyebrow": "03 / Galerie",
     "title": "DJ Pirate en images",
     "description": "Découvrez les 17 photos de DJ Pirate, DJ et voix off basé à Paris : portraits, moments live et visuels presse pour les médias et organisateurs.",
-    "homepageTitle": "L’univers de dj Pirate.",
+    "homepageTitle": "L’univers de DJ Pirate.",
     "homepageCtaLabel": "Voir les 17 photos",
     "images": [
       {
@@ -508,7 +508,7 @@ const piratePressKit: PressKitConfig = {
     ]
   },
   "footer": {
-    "availabilityText": "DJ & voix off · Paris · France & international",
+    "availabilityText": "Paris · France & international",
     "navigationLabel": "Navigation",
     "socialLabel": "Réseaux",
     "bookingLabel": "Booking",
@@ -640,14 +640,6 @@ export const djPirateClient: ClientConfig = {
   "seo": {
     "title": "DJ Pirate | DJ & voix off à Paris · Booking & press kit",
     "description": "DJ Pirate, DJ et voix off basé à Paris. Hip-Hop, R&B, Trap, House et musiques caribéennes. Bio, références, galerie, live et booking.",
-    "keywords": [
-      "DJ Pirate",
-      "DJ Paris",
-      "DJ Martinique",
-      "Urban Session",
-      "DJ voix off",
-      "booking DJ Pirate"
-    ],
     "ogImage": "/pirate/logo/pirate-logo-og.png"
   },
   "defaultTheme": "yellow",

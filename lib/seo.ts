@@ -44,14 +44,12 @@ export function buildClientMetadata(
     title: string;
     description: string;
     image: string;
-    keywords: string[];
     imageAlt: string;
   }>
 ): Metadata {
   const title = overrides?.title ?? client.seo.title;
   const description = overrides?.description ?? client.seo.description;
   const image = overrides?.image ?? client.seo.ogImage;
-  const keywords = overrides?.keywords ?? client.seo.keywords;
   const imageAlt =
     overrides?.imageAlt ?? `Aperçu du dossier de presse de ${client.name}`;
   const canonicalUrl = getCanonicalUrl(client, path);
@@ -65,7 +63,6 @@ export function buildClientMetadata(
     applicationName: client.name,
     title,
     description,
-    keywords,
     authors: [{ name: client.name, url: canonicalUrl }],
     creator: client.name,
     publisher: client.name,

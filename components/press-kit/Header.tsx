@@ -144,6 +144,7 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
 
           <a
             href={navigation.cta.href}
+            aria-label={`${navigation.cta.label} (menu compact)`}
             className={`inline-flex rounded-full bg-[var(--pk-accent)] font-semibold uppercase text-white transition-all duration-300 hover:bg-[var(--pk-accent-strong)] lg:hidden ${
               isHeaderCompact
                 ? "px-3 py-2 text-[9px] tracking-[0.16em]"

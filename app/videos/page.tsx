@@ -38,13 +38,6 @@ export async function generateMetadata({
     title: `${client.name} Vidéos | Extraits live et médias`,
     description: client.pressKit.videos.description,
     image: client.heroImage,
-    keywords: [
-      `${client.slug} vidéos`,
-      "vidéos DJ",
-      "extraits live DJ",
-      "kit média artiste",
-      `vidéos DJ ${client.city}`,
-    ],
     imageAlt: `Vidéos de ${client.name}`,
   });
 }
