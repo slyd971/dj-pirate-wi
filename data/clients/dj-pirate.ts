@@ -230,31 +230,48 @@ const piratePressKit: PressKitConfig = {
     "supportingText": "DJ & Beatmaker. De la Martinique à Paris.",
     "tags": [
       "Urban",
-      "House",
       "Hip-Hop",
-      "Old School",
+      "Trap",
       "R&B",
-      "Trap US & FR"
+      "Old School",
+      "Afro",
+      "Shatta",
+      "Bouyon",
+      "Socca",
+      "House",
+      "Deep House",
+      "Afro House",
+      "Latin House",
+      "Electro House"
     ],
     "paragraphs": [
       "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016.",
       "Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité et sa technique lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020.",
-      "Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes viennent enrichir cette palette sans l’enfermer dans un genre.",
+      "Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes (Shatta, Bouyon, Socca) viennent enrichir cette palette sans l’enfermer dans un genre.",
       "DJ & Beatmaker, il construit ses sets autour du groove et de la lecture du dancefloor. Il crée en 2025 l’émission Urban Session, disponible sur SoundCloud et YouTube, où il partage ses sets et ses productions aux côtés des talents qui l’inspirent."
     ]
   },
   "clubs": {
     "eyebrow": "02 / Références",
     "title": "De la Martinique aux\nscènes européennes.",
-    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes.",
+    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes, avec 9 ans d'expérience derrière les platines.",
     "regions": [
       {
         "title": "Festival & Caraïbes",
         "icon": "map-pin",
         "items": [
-          "All Day In — 2019",
-          "Guadeloupe",
+          "All Day In — Guadeloupe, 2019",
+          "Tropical Toulouse Beach",
+          "Yardland",
           "Martinique"
+        ]
+      },
+      {
+        "title": "Collaborations",
+        "icon": "handshake",
+        "items": [
+          "Intersport",
+          "Adidas"
         ]
       },
       {
@@ -377,7 +394,7 @@ const piratePressKit: PressKitConfig = {
     ],
     "bios": {
       "short": "DJ & Beatmaker originaire de la Martinique, Pirate développe depuis 2016 une identité entre Urban et House. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse. Il anime aussi Urban Session, où il partage ses sets et productions.",
-      "long": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité et sa technique lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes viennent enrichir cette palette sans l’enfermer dans un genre. DJ & Beatmaker, il construit ses sets autour du groove et de la lecture du dancefloor. Il crée en 2025 l’émission Urban Session, disponible sur SoundCloud et YouTube, où il partage ses sets et ses productions aux côtés des talents qui l’inspirent."
+      "long": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité et sa technique lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes (Shatta, Bouyon, Socca) viennent enrichir cette palette sans l’enfermer dans un genre. DJ & Beatmaker, il construit ses sets autour du groove et de la lecture du dancefloor. Il crée en 2025 l’émission Urban Session, disponible sur SoundCloud et YouTube, où il partage ses sets et ses productions aux côtés des talents qui l’inspirent."
     }
   },
   "contact": {
@@ -534,7 +551,7 @@ export const djPirateClient: ClientConfig = {
   "country": "France",
   "category": "DJ & Beatmaker",
   "description": "DJ Pirate, DJ & Beatmaker basé à Paris. Univers Urban & House. Bio, références, galerie, live et booking.",
-  "longBio": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité et sa technique lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes viennent enrichir cette palette sans l’enfermer dans un genre. DJ & Beatmaker, il construit ses sets autour du groove et de la lecture du dancefloor. Il crée en 2025 l’émission Urban Session, disponible sur SoundCloud et YouTube, où il partage ses sets et ses productions aux côtés des talents qui l’inspirent.",
+  "longBio": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité et sa technique lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, développant des sets qui oscillent entre Urban et House selon les lieux et les publics. Ses influences caribéennes (Shatta, Bouyon, Socca) viennent enrichir cette palette sans l’enfermer dans un genre. DJ & Beatmaker, il construit ses sets autour du groove et de la lecture du dancefloor. Il crée en 2025 l’émission Urban Session, disponible sur SoundCloud et YouTube, où il partage ses sets et ses productions aux côtés des talents qui l’inspirent.",
   "heroImage": "/pirate/hero/pirate-hero-yellow.png",
   "gallery": [
     {

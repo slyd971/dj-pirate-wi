@@ -158,7 +158,7 @@ export type PressKitConfig = {
     itemIconOverrides?: Record<string, { src: string; alt: string }>;
     regions: Array<{
       title: string;
-      icon: "map-pin" | "globe";
+      icon: "map-pin" | "globe" | "handshake";
       items: string[];
     }>;
   };

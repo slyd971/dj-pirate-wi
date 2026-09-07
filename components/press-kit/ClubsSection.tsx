@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Globe2, MapPin } from "lucide-react";
+import { Globe2, Handshake, MapPin } from "lucide-react";
 import type { PressKitConfig } from "@/data/config";
 
 function ClubItem({
@@ -38,6 +38,7 @@ type ClubsSectionProps = {
 const iconMap = {
   globe: Globe2,
   "map-pin": MapPin,
+  handshake: Handshake,
 };
 
 export function ClubsSection({ clubs, brands }: ClubsSectionProps) {
