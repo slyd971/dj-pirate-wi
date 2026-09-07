@@ -536,7 +536,7 @@ export function HeroSection({
           </motion.div>
 
           <motion.div
-            className="order-2 relative lg:justify-self-end"
+            className="pk-hero-visual order-2 relative lg:justify-self-end"
             variants={heroImageReveal}
           >
             <div className="absolute -left-4 top-8 h-28 w-28 rounded-full bg-[rgb(var(--pk-accent-rgb)/0.15)] blur-3xl md:-left-6 md:h-36 md:w-36" />
@@ -547,7 +547,7 @@ export function HeroSection({
                 <img
                   src={hero.image.src}
                   alt={hero.image.alt}
-                  className="h-[42svh] w-full rounded-[1.2rem] object-cover md:h-[66svh] md:rounded-[1.5rem]"
+                  className="pk-hero-portrait h-[42svh] w-full rounded-[1.2rem] object-cover md:h-[66svh] md:rounded-[1.5rem]"
                   style={{ objectPosition: hero.image.position ?? "center 22%" }}
                 />
               ) : (

@@ -103,4 +103,17 @@ select {
 [data-client="dj-pirate"] a[class*="bg-[var(--pk-accent)]"] { color: #050505; }
 [data-client="dj-pirate"] #home a[aria-label] { background: #111; border-color: #393322; color: #f5c400; }
 [data-client="dj-pirate"] #home a[aria-label]:hover { background: #f5c400; color: #050505; }
-[data-client="dj-pirate"] #home h1 { font-size: clamp(2rem, 4vw, 4rem); }
+/* Keep the artist name at the full hero scale; size the subtitle separately. */
+[data-client="dj-pirate"] #home h1 { font-size: clamp(3.2rem, 8vw, 8.2rem); }
+[data-client="dj-pirate"] #home h1 > span { font-size: clamp(2rem, 4vw, 4rem); }
+
+/* Keep the desktop portrait compact so the headline and stats stay together. */
+@media (min-width: 1024px) {
+  [data-client="dj-pirate"] #home .pk-hero-visual { width: 100%; }
+  [data-client="dj-pirate"] #home .pk-hero-visual > div:last-child { max-width: 38rem; }
+  [data-client="dj-pirate"] #home .pk-hero-portrait {
+    height: clamp(540px, 70svh, 720px);
+    width: 100%;
+    object-fit: cover;
+  }
+}

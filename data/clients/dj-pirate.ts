@@ -84,7 +84,7 @@ const piratePressKit: PressKitConfig = {
   "heroVariants": {
     "impact": {
       "eyebrow": "",
-      "title": "DJ PIRATE",
+      "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
       "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "impact",
@@ -128,7 +128,7 @@ const piratePressKit: PressKitConfig = {
     },
     "interactive": {
       "eyebrow": "",
-      "title": "DJ PIRATE",
+      "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
       "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "interactive",
@@ -172,7 +172,7 @@ const piratePressKit: PressKitConfig = {
     },
     "showcase": {
       "eyebrow": "",
-      "title": "DJ PIRATE",
+      "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
       "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "showcase",
@@ -238,7 +238,7 @@ const piratePressKit: PressKitConfig = {
   },
   "clubs": {
     "eyebrow": "02 / Références",
-    "title": "Des îles aux\nscènes européennes.",
+    "title": "De la Martinique aux\nscènes européennes.",
     "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes. Références issues du press kit 2026.",
     "regions": [
       {
@@ -392,7 +392,7 @@ const piratePressKit: PressKitConfig = {
     "eyebrow": "03 / Galerie",
     "title": "DJ Pirate en images",
     "description": "Découvrez les 17 photos de DJ Pirate, DJ et voix off basé à Paris : portraits, moments live et visuels presse pour les médias et organisateurs.",
-    "homepageTitle": "L’univers Pirate.",
+    "homepageTitle": "L’univers de dj Pirate.",
     "homepageCtaLabel": "Voir les 17 photos",
     "images": [
       {
@@ -403,37 +403,44 @@ const piratePressKit: PressKitConfig = {
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-2.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 02",
         "position": "center 35%"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-3.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 03",
         "position": "center 35%"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-4.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 04",
         "position": "center 35%"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-5.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 05",
         "position": "center 35%"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-6.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 06",
         "position": "center 35%",
         "size": "md:col-span-2"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-7.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 07",
         "position": "center 35%"
       },
       {
         "src": "/pirate/gallery/optimized/pirate-gallery-8.webp",
+        "hideFromPreview": true,
         "alt": "DJ Pirate — photo presse 08",
         "position": "center 35%"
       },
