@@ -492,6 +492,15 @@ export function HeroSection({
               <span className={`mt-2 block text-[var(--pk-accent)] md:mt-3 ${getHeroAccentSizeClass(hero.accent)}`}>{hero.accent}</span>
             </motion.h1>
 
+            {hero.genreLine && (
+              <motion.div
+                variants={heroReveal}
+                className="mt-2 text-lg font-black uppercase leading-[1.05] tracking-[0.01em] text-white/92 sm:text-xl md:mt-3 md:text-3xl xl:text-4xl"
+              >
+                {hero.genreLine}
+              </motion.div>
+            )}
+
             <motion.p
               variants={heroReveal}
               className="mt-5 max-w-[40rem] text-[0.96rem] leading-6 text-white/76 md:mt-6 md:text-[1.12rem] md:leading-8"

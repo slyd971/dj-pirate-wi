@@ -118,6 +118,7 @@ export type PressKitConfig = {
       eyebrow: string;
       title: string;
       accent: string;
+      genreLine?: string;
       description: string;
       layout: "impact" | "interactive" | "showcase";
       image: {
