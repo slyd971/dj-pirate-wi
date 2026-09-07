@@ -508,6 +508,7 @@ export const djPirateClient: ClientConfig = {
   "slugAliases": [
     "pirate"
   ],
+  "domain": "dj-pirate.presskit.fr",
   "vercelSubdomain": "dj-pirate-wi.vercel.app",
   "name": "DJ PIRATE",
   "tagline": "DJ & voix off · Culture urbaine, énergie caribéenne",
