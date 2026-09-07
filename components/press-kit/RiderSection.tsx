@@ -47,6 +47,16 @@ export function RiderSection({ rider }: RiderSectionProps) {
             </div>
           ))}
         </div>
+
+        <p className="mt-6 text-sm leading-6 text-white/58 md:mt-8 md:text-base">
+          Rider transport et hébergement communiqué sur demande.{" "}
+          <a
+            href="#contact"
+            className="text-[var(--pk-accent)] underline underline-offset-4 transition hover:text-[var(--pk-accent-strong)]"
+          >
+            Contacter pour le booking
+          </a>
+        </p>
       </div>
     </section>
   );

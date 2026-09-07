@@ -322,7 +322,7 @@ const piratePressKit: PressKitConfig = {
     "items": []
   },
   "rider": {
-    "eyebrow": "06 / Rider technique",
+    "eyebrow": "06 / Setup technique",
     "title": "Le setup\nde DJ Pirate.",
     "groups": [
       {
@@ -343,21 +343,6 @@ const piratePressKit: PressKitConfig = {
         "items": [
           "Micro HF",
           "Support ordinateur"
-        ]
-      },
-      {
-        "title": "Transport",
-        "items": [
-          "1 ou 2 billets aller-retour SNCF en 1re classe depuis Paris, modifiables et remboursables.",
-          "Réservation électronique, bagage cabine inclus et Fast Track si disponible.",
-          "Horaires et e-billets transmis 5 jours avant le show ; transport et modifications nécessaires pris en charge par le promoteur."
-        ]
-      },
-      {
-        "title": "Hébergement",
-        "items": [
-          "1 chambre double dans un hôtel à proximité directe du lieu du show.",
-          "Petit-déjeuner inclus et accès à une salle de sport."
         ]
       }
     ]
