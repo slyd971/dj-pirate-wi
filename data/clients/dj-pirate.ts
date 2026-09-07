@@ -632,7 +632,7 @@ export const djPirateClient: ClientConfig = {
       "DJ voix off",
       "booking DJ Pirate"
     ],
-    "ogImage": "/pirate/logo/pirate-logo-og.png"
+    "ogImage": "/pirate/logo/pirate-logo.webp"
   },
   "defaultTheme": "yellow",
   "defaultVariant": "impact"
