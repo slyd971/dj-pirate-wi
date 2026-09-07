@@ -9,6 +9,7 @@ import { GalleryPreviewSection } from "@/components/press-kit/GalleryPreviewSect
 import { Header } from "@/components/press-kit/Header";
 import { HeroSection } from "@/components/press-kit/HeroSection";
 import { HighlightsSection } from "@/components/press-kit/HighlightsSection";
+import { PressResourcesSection } from "@/components/press-kit/PressResourcesSection";
 import { RiderSection } from "@/components/press-kit/RiderSection";
 import { SoundSection } from "@/components/press-kit/SoundSection";
 import { SpotifySection } from "@/components/press-kit/SpotifySection";
@@ -25,6 +26,7 @@ import {
   hasBrandsContent,
   hasGalleryContent,
   hasHighlightsContent,
+  hasPressContent,
   hasRiderContent,
   hasSoundContent,
   hasSpotifyContent,
@@ -183,6 +185,9 @@ export default async function Home({ params, searchParams }: HomeProps) {
       )}
       {hasRiderContent(pressKitConfig) && pressKitConfig.rider && (
         <RiderSection rider={pressKitConfig.rider} />
+      )}
+      {hasPressContent(pressKitConfig) && pressKitConfig.press && (
+        <PressResourcesSection press={pressKitConfig.press} />
       )}
       <ContactSection contact={pressKitConfig.contact} />
       <Footer

@@ -264,6 +264,20 @@ export type PressKitConfig = {
       items: string[];
     }>;
   };
+  press?: {
+    eyebrow: string;
+    title: string;
+    description?: string;
+    downloads: Array<{
+      label: string;
+      format: string;
+      href: string;
+    }>;
+    bios: {
+      short: string;
+      long: string;
+    };
+  };
   contact: {
     eyebrow: string;
     title: string;

@@ -46,6 +46,10 @@ const piratePressKit: PressKitConfig = {
       {
         "label": "Setup",
         "href": "#rider"
+      },
+      {
+        "label": "Presse",
+        "href": "#press"
       }
     ],
     "cta": {
@@ -347,8 +351,34 @@ const piratePressKit: PressKitConfig = {
       }
     ]
   },
+  "press": {
+    "eyebrow": "07 / Ressources presse",
+    "title": "Le kit presse\nde DJ Pirate.",
+    "description": "Dossier de presse, visuels haute définition et logo, prêts à l'emploi pour les médias, festivals et organisateurs.",
+    "downloads": [
+      {
+        "label": "Dossier de presse",
+        "format": "PDF",
+        "href": "/pirate/press/dj-pirate-dossier-presse.pdf"
+      },
+      {
+        "label": "Pack photos HD",
+        "format": "ZIP",
+        "href": "/pirate/press/dj-pirate-photos-hd.zip"
+      },
+      {
+        "label": "Pack logo",
+        "format": "ZIP",
+        "href": "/pirate/press/dj-pirate-logos.zip"
+      }
+    ],
+    "bios": {
+      "short": "DJ Pirate, originaire de la Martinique, mixe Hip-Hop, R&B, Trap, House et musiques caribéennes. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse. Il anime aussi Urban Session, une émission consacrée à la culture urbaine.",
+      "long": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité, sa technique et ses qualités de speaker lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, avec une identité qui relie musiques urbaines et influences caribéennes. Spécialiste du Hip-Hop, du Old School, du R&B et de la Trap US et française, il crée en 2025 l’émission Urban Session. Disponible sur SoundCloud et YouTube, elle met en lumière la culture et les talents de la scène urbaine."
+    }
+  },
   "contact": {
-    "eyebrow": "07 / Booking",
+    "eyebrow": "08 / Booking",
     "title": "La prochaine date\ncommence ici.",
     "description": "Clubs, festivals et événements : contactez DJ Pirate pour les disponibilités et les conditions de booking.",
     "methods": [

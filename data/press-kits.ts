@@ -53,6 +53,7 @@ const sectionHrefMap = {
   spotify: "#spotify",
   brands: "#brands",
   rider: "#rider",
+  press: "#press",
   contact: "#contact",
 };
 
@@ -121,6 +122,10 @@ export function hasRiderContent(config: PressKitConfig): boolean {
   return Boolean(config.rider && config.rider.groups.length > 0);
 }
 
+export function hasPressContent(config: PressKitConfig): boolean {
+  return Boolean(config.press && config.press.downloads.length > 0);
+}
+
 export function hasHighlightsContent(config: PressKitConfig): boolean {
   return Boolean(config.highlights && config.highlights.items.length > 0);
 }
@@ -143,6 +148,7 @@ export function getResolvedNavigation(
   if (hasSpotifyContent(config)) visibleSections.add(sectionHrefMap.spotify);
   if (hasBrandsContent(config)) visibleSections.add(sectionHrefMap.brands);
   if (hasRiderContent(config)) visibleSections.add(sectionHrefMap.rider);
+  if (hasPressContent(config)) visibleSections.add(sectionHrefMap.press);
 
   return {
     ...config.navigation,
