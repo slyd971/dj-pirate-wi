@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "env": {
+    "PRESS_KIT_CLIENT_SLUG": "dj-pirate"
+  },
+  "build": {
+    "env": {
+      "PRESS_KIT_CLIENT_SLUG": "dj-pirate"
+    }
+  }
+}
