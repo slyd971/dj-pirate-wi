@@ -107,6 +107,18 @@ select {
 [data-client="dj-pirate"] #home h1 { font-size: clamp(3.2rem, 8vw, 8.2rem); }
 [data-client="dj-pirate"] #home h1 > span { font-size: clamp(2rem, 4vw, 4rem); }
 
+/* Center the hero content on mobile instead of left-aligning it. */
+@media (max-width: 767px) {
+  [data-client="dj-pirate"] #home h1,
+  [data-client="dj-pirate"] #home p,
+  [data-client="dj-pirate"] #home .mt-6.grid.grid-cols-2 {
+    text-align: center;
+  }
+  [data-client="dj-pirate"] #home .mt-6.grid.grid-cols-2 {
+    justify-items: center;
+  }
+}
+
 /* Keep the desktop portrait compact so the headline and stats stay together. */
 @media (min-width: 1024px) {
   [data-client="dj-pirate"] #home .pk-hero-visual { width: 100%; }
