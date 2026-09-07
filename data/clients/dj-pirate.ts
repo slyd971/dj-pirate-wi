@@ -86,7 +86,7 @@ const piratePressKit: PressKitConfig = {
       "eyebrow": "",
       "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
-      "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
+      "description": "La culture urbaine. L’énergie caribéenne. Derrière les platines depuis 2016, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "impact",
       "image": {
         "src": "/pirate/hero/pirate-hero-yellow.png",
@@ -130,7 +130,7 @@ const piratePressKit: PressKitConfig = {
       "eyebrow": "",
       "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
-      "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
+      "description": "La culture urbaine. L’énergie caribéenne. Derrière les platines depuis 2016, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "interactive",
       "image": {
         "src": "/pirate/hero/pirate-hero-yellow.png",
@@ -174,7 +174,7 @@ const piratePressKit: PressKitConfig = {
       "eyebrow": "",
       "title": "PIRATE",
       "accent": "DJ & VOIX OFF",
-      "description": "La culture urbaine. L’énergie caribéenne. Neuf ans derrière les platines, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
+      "description": "La culture urbaine. L’énergie caribéenne. Derrière les platines depuis 2016, une signature entre Hip-Hop, R&B, Trap, House et musiques caribéennes.",
       "layout": "showcase",
       "image": {
         "src": "/pirate/hero/pirate-hero-yellow.png",
@@ -232,14 +232,14 @@ const piratePressKit: PressKitConfig = {
     "paragraphs": [
       "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016.",
       "Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité, sa technique et ses qualités de speaker lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020.",
-      "Basé à Paris, il compte neuf ans d’expérience dans le press kit 2026. Il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, avec une identité qui relie musiques urbaines et influences caribéennes.",
+      "Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, avec une identité qui relie musiques urbaines et influences caribéennes.",
       "Spécialiste du Hip-Hop, du Old School, du R&B et de la Trap US et française, il crée en 2025 l’émission Urban Session. Disponible sur SoundCloud et YouTube, elle met en lumière la culture et les talents de la scène urbaine."
     ]
   },
   "clubs": {
     "eyebrow": "02 / Références",
     "title": "De la Martinique aux\nscènes européennes.",
-    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes. Références issues du press kit 2026.",
+    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes.",
     "regions": [
       {
         "title": "Festival & Caraïbes",
@@ -516,7 +516,7 @@ export const djPirateClient: ClientConfig = {
   "country": "France",
   "category": "DJ & voix off",
   "description": "DJ Pirate, DJ et voix off basé à Paris. Hip-Hop, R&B, Trap, House et musiques caribéennes. Bio, références, galerie, live et booking.",
-  "longBio": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité, sa technique et ses qualités de speaker lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il compte neuf ans d’expérience dans le press kit 2026. Il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, avec une identité qui relie musiques urbaines et influences caribéennes. Spécialiste du Hip-Hop, du Old School, du R&B et de la Trap US et française, il crée en 2025 l’émission Urban Session. Disponible sur SoundCloud et YouTube, elle met en lumière la culture et les talents de la scène urbaine.",
+  "longBio": "Originaire de la Martinique, DJ Pirate grandit avec la musique. Du piano à la batterie, il développe son sens du rythme avant de se tourner vers le mixage. Son parcours prend son essor en Guadeloupe à partir de 2016. Dès 2017, il se produit en club dans un univers caribéen. En 2019, il rejoint la scène du festival All Day In. Son originalité, sa technique et ses qualités de speaker lui permettent de s’imposer auprès du public, notamment à Lyon où il joue régulièrement dans les soirées afro-caribéennes dès 2020. Basé à Paris, il s’est produit dans de nombreuses villes françaises, en Belgique et en Suisse, avec une identité qui relie musiques urbaines et influences caribéennes. Spécialiste du Hip-Hop, du Old School, du R&B et de la Trap US et française, il crée en 2025 l’émission Urban Session. Disponible sur SoundCloud et YouTube, elle met en lumière la culture et les talents de la scène urbaine.",
   "heroImage": "/pirate/hero/pirate-hero-yellow.png",
   "gallery": [
     {
