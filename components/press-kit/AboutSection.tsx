@@ -24,7 +24,7 @@ export function AboutSection({ about }: AboutSectionProps) {
   return (
     <section
       id="about"
-      className="relative scroll-mt-24 overflow-hidden px-4 py-10 md:px-6 md:py-20"
+      className="relative scroll-mt-24 overflow-hidden px-4 pb-10 pt-8 md:px-6 md:pb-20 md:pt-12"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgb(var(--pk-accent-rgb)/0.10),transparent_25%),radial-gradient(circle_at_80%_90%,rgba(255,255,255,0.03),transparent_20%)]" />
 

@@ -201,7 +201,8 @@ function HeroVariantBody({
   variant,
   logo,
   idOverride,
-}: HeroSectionProps & { idOverride?: string }) {
+  compactMobile = false,
+}: HeroSectionProps & { idOverride?: string; compactMobile?: boolean }) {
   const hero = heroVariants[variant];
   const hasHeroImage = Boolean(hero.image.src);
   const hasEyebrow = Boolean(hero.eyebrow.trim());
@@ -384,9 +385,13 @@ function HeroVariantBody({
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--pk-bg)] via-black/30 to-black/20" />
         </div>
 
-        <div className="relative mx-auto flex min-h-[90svh] max-w-7xl flex-col justify-center px-4 py-10 md:min-h-[84svh] md:px-6 md:py-12 lg:min-h-[82svh] lg:justify-start lg:pt-20 lg:pb-10">
-          <div className="w-full max-w-3xl">
-            {hasEyebrow && (
+        <div
+          className={`relative mx-auto flex min-h-[90svh] max-w-7xl flex-col justify-center px-4 py-10 md:min-h-[84svh] md:px-6 md:py-12 lg:min-h-[82svh] lg:justify-start lg:pt-20 lg:pb-10 ${
+            compactMobile ? "items-center justify-end pb-14 text-center md:items-stretch md:justify-start md:pb-10 md:text-left" : ""
+          }`}
+        >
+          <div className={`w-full max-w-3xl ${compactMobile ? "flex flex-col items-center md:block" : ""}`}>
+            {hasEyebrow && !compactMobile && (
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-white/75 backdrop-blur-md md:px-4 md:py-2 md:text-[11px] md:tracking-[0.28em]">
                 <Disc3 className="h-3 w-3 text-[var(--pk-accent)] md:h-3.5 md:w-3.5" />
                 {hero.eyebrow}
@@ -398,17 +403,19 @@ function HeroVariantBody({
               <span className="mt-2 block text-[var(--pk-accent)] md:mt-3">{hero.accent}</span>
             </h1>
 
-            {hero.genreLine && (
+            {hero.genreLine && !compactMobile && (
               <div className="mt-2 text-lg font-black uppercase leading-[1.05] tracking-[0.01em] text-white/92 sm:text-xl md:mt-3 md:text-3xl xl:text-4xl">
                 {hero.genreLine}
               </div>
             )}
 
-            <p className="mt-5 max-w-2xl text-sm leading-6 text-white/78 md:mt-7 md:text-xl md:leading-8">
-              {hero.description}
-            </p>
+            {!compactMobile && (
+              <p className="mt-5 max-w-2xl text-sm leading-6 text-white/78 md:mt-7 md:text-xl md:leading-8">
+                {hero.description}
+              </p>
+            )}
 
-            <div className="mt-7 flex flex-wrap gap-2.5 md:mt-9 md:gap-3">
+            <div className={`mt-7 flex flex-wrap gap-2.5 md:mt-9 md:gap-3 ${compactMobile ? "justify-center md:justify-start" : ""}`}>
               {hero.ctas.map((cta) => (
                 <a
                   key={cta.href}
@@ -424,7 +431,7 @@ function HeroVariantBody({
               ))}
             </div>
 
-            {hero.footerNote && (
+            {hero.footerNote && !compactMobile && (
               <div className="mt-10 flex items-center gap-3 text-[10px] uppercase tracking-[0.22em] text-white/50 md:mt-12 md:text-[11px] md:tracking-[0.28em]">
                 <span className="h-px w-10 bg-white/20 md:w-14" />
                 {hero.footerNote}
@@ -433,7 +440,7 @@ function HeroVariantBody({
           </div>
 
           {socialsPosition === "before-stats" && socialLinks}
-          {hasStats && (
+          {hasStats && !compactMobile && (
             <div className={`mt-8 grid gap-3 md:mt-10 md:gap-4 ${statGridClass}`}>
               {hero.stats.map((stat) => (
                 <div
@@ -623,7 +630,7 @@ export function HeroSection({ mobileVariant, variant, ...rest }: HeroSectionProp
     return (
       <div id="home">
         <div className="md:hidden">
-          <HeroVariantBody {...rest} variant={mobileVariant} />
+          <HeroVariantBody {...rest} variant={mobileVariant} compactMobile />
         </div>
         <div className="hidden md:block">
           <HeroVariantBody {...rest} variant={variant} />
