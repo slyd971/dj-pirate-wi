@@ -666,7 +666,8 @@ export const djPirateClient: ClientConfig = {
   "seo": {
     "title": "DJ Pirate | DJ & Beatmaker · Urban & House à Paris · Booking & press kit",
     "description": "DJ Pirate, DJ & Beatmaker basé à Paris. Univers Urban & House. Bio, références, galerie, live et booking.",
-    "ogImage": "/pirate/logo/pirate-logo-og.png"
+    "ogImage": "/pirate/logo/pirate-logo-og.png",
+    "favicon": "/pirate/favicon/favicon.ico"
   },
   "defaultTheme": "yellow",
   "defaultVariant": "impact"
