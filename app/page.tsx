@@ -149,6 +149,7 @@ export default async function Home({ params, searchParams }: HomeProps) {
         heroSocials={pressKitConfig.heroSocials}
         socialsPosition={pressKitConfig.heroSocialsPosition}
         variant={variant.id}
+        mobileVariant="showcase"
         logo={pressKitConfig.artist.logo.showInHero !== false ? pressKitConfig.artist.logo : undefined}
       />
       <AboutSection about={pressKitConfig.about} />
