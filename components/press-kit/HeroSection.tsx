@@ -403,8 +403,8 @@ function HeroVariantBody({
               <span className="mt-2 block text-[var(--pk-accent)] md:mt-3">{hero.accent}</span>
             </h1>
 
-            {hero.genreLine && !compactMobile && (
-              <div className="mt-2 text-lg font-black uppercase leading-[1.05] tracking-[0.01em] text-white/92 sm:text-xl md:mt-3 md:text-3xl xl:text-4xl">
+            {hero.genreLine && (
+              <div className="mt-2 text-base font-black uppercase leading-[1.05] tracking-[0.01em] text-white/92 sm:text-xl md:mt-3 md:text-3xl xl:text-4xl">
                 {hero.genreLine}
               </div>
             )}
