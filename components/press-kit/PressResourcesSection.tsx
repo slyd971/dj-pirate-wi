@@ -76,9 +76,10 @@ export function PressResourcesSection({ press }: PressResourcesSectionProps) {
         <div className="grid gap-4 md:grid-cols-3 md:gap-6">
           {press.downloads.map((download) => (
             <a
-              key={download.href}
+              key={download.label}
               href={download.href}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="group flex items-center gap-3 rounded-[1.2rem] border border-white/10 bg-white/[0.025] p-5 transition hover:border-[rgb(var(--pk-accent-rgb)/0.4)] hover:bg-white/[0.05] md:rounded-[1.5rem] md:p-7"
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[rgb(var(--pk-accent-rgb)/0.18)] text-[var(--pk-accent-soft)] md:h-14 md:w-14 md:rounded-2xl">

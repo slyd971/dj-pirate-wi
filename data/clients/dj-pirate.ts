@@ -377,19 +377,19 @@ const piratePressKit: PressKitConfig = {
     "description": "Dossier de presse, visuels haute définition et logo, prêts à l'emploi pour les médias, festivals et organisateurs.",
     "downloads": [
       {
-        "label": "Dossier de presse",
-        "format": "PDF",
-        "href": "/pirate/press/dj-pirate-dossier-presse.pdf"
+        "label": "Pack vidéos",
+        "format": "Drive",
+        "href": "#"
       },
       {
         "label": "Pack photos HD",
-        "format": "ZIP",
-        "href": "/pirate/press/dj-pirate-photos-hd.zip"
+        "format": "Drive",
+        "href": "#"
       },
       {
         "label": "Pack logo",
-        "format": "ZIP",
-        "href": "/pirate/press/dj-pirate-logos.zip"
+        "format": "Drive",
+        "href": "#"
       }
     ],
     "bios": {
