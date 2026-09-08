@@ -267,6 +267,20 @@ const piratePressKit: PressKitConfig = {
         ]
       },
       {
+        "title": "Collaborations",
+        "icon": "handshake",
+        "items": [
+          {
+            "logo": "/pirate/brands/intersport-logo.svg",
+            "alt": "Intersport"
+          },
+          {
+            "logo": "/pirate/brands/adidas-logo.svg",
+            "alt": "Adidas"
+          }
+        ]
+      },
+      {
         "title": "France",
         "icon": "map-pin",
         "items": [
@@ -335,17 +349,7 @@ const piratePressKit: PressKitConfig = {
     "supportingText": "",
     "categories": [],
     "itemLabel": "",
-    "inlineBelowClubs": true,
-    "items": [
-      {
-        "name": "Intersport",
-        "logo": "/pirate/brands/intersport-logo.svg"
-      },
-      {
-        "name": "Adidas",
-        "logo": "/pirate/brands/adidas-logo.svg"
-      }
-    ]
+    "items": []
   },
   "rider": {
     "eyebrow": "06 / Setup technique",

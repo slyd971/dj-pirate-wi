@@ -159,7 +159,7 @@ export type PressKitConfig = {
     regions: Array<{
       title: string;
       icon: "map-pin" | "globe" | "handshake";
-      items: string[];
+      items: Array<string | { logo: string; alt: string }>;
     }>;
   };
   highlights?: {

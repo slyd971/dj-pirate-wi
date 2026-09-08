@@ -79,17 +79,31 @@ export function ClubsSection({ clubs, brands }: ClubsSectionProps) {
                 </h3>
 
                 <div className="grid grid-cols-2 gap-3 text-sm text-gray-300 md:gap-4 md:text-base">
-                  {region.items.map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-lg border border-white/10 p-2.5 md:p-3"
-                    >
-                      <ClubItem
-                        item={item}
-                        iconOverrides={clubs.itemIconOverrides}
-                      />
-                    </div>
-                  ))}
+                  {region.items.map((item) =>
+                    typeof item === "string" ? (
+                      <div
+                        key={item}
+                        className="rounded-lg border border-white/10 p-2.5 md:p-3"
+                      >
+                        <ClubItem
+                          item={item}
+                          iconOverrides={clubs.itemIconOverrides}
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        key={item.alt}
+                        className="flex items-center justify-center rounded-lg border border-white/10 bg-black/40 p-3 md:p-4"
+                      >
+                        <img
+                          src={item.logo}
+                          alt={item.alt}
+                          className="h-6 max-w-full object-contain opacity-95 [filter:brightness(0)_invert(1)] md:h-7"
+                          loading="lazy"
+                        />
+                      </div>
+                    )
+                  )}
                 </div>
               </div>
             );
