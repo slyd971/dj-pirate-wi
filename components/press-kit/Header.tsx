@@ -94,8 +94,8 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
             <div
               className={`flex items-center overflow-hidden transition-all duration-300 ${
                 isHeaderCompact
-                  ? "h-8 w-[92px] md:h-9 md:w-[152px]"
-                  : "h-8 w-[92px] md:h-11 md:w-[172px]"
+                  ? "h-8 w-[128px] md:h-9 md:w-[152px]"
+                  : "h-8 w-[128px] md:h-11 md:w-[172px]"
               }`}
             >
               {hasLogoImage ? (
