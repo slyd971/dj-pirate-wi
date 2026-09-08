@@ -48,15 +48,56 @@ export function RiderSection({ rider }: RiderSectionProps) {
           ))}
         </div>
 
-        <p className="mt-6 text-sm leading-6 text-white/58 md:mt-8 md:text-base">
-          Rider transport et hébergement communiqué sur demande.{" "}
-          <a
-            href="#contact"
-            className="text-[var(--pk-accent)] underline underline-offset-4 transition hover:text-[var(--pk-accent-strong)]"
-          >
-            Contacter pour le booking
-          </a>
-        </p>
+        {rider.vhr ? (
+          <div className="mt-12 md:mt-20">
+            <div className="mb-8 max-w-4xl md:mb-12">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--pk-accent)] md:text-xs md:tracking-[0.35em]">
+                {rider.vhr.eyebrow ?? "VHR"}
+              </div>
+              <h3 className="mt-3 whitespace-pre-line text-2xl font-black uppercase md:text-4xl">
+                {rider.vhr.title}
+              </h3>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+              {rider.vhr.groups.map((group) => (
+                <div
+                  key={group.title}
+                  className="rounded-[1.2rem] border border-white/10 bg-white/[0.025] p-5 md:rounded-[1.5rem] md:p-7"
+                >
+                  <div className="mb-5 flex items-center gap-2.5">
+                    <div className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--pk-accent)]" />
+                    <h4 className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--pk-accent-soft)] md:text-[11px] md:tracking-[0.34em]">
+                      {group.title}
+                    </h4>
+                  </div>
+
+                  <ul className="space-y-3">
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex gap-3 text-sm leading-5 text-white/68 md:text-[0.94rem] md:leading-6"
+                      >
+                        <span className="mt-[0.42em] h-[5px] w-[5px] flex-shrink-0 rounded-full bg-[rgb(var(--pk-accent-rgb)/0.55)]" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <p className="mt-6 text-sm leading-6 text-white/58 md:mt-8 md:text-base">
+            Rider transport et hébergement communiqué sur demande.{" "}
+            <a
+              href="#contact"
+              className="text-[var(--pk-accent)] underline underline-offset-4 transition hover:text-[var(--pk-accent-strong)]"
+            >
+              Contacter pour le booking
+            </a>
+          </p>
+        )}
       </div>
     </section>
   );

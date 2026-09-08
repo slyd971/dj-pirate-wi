@@ -1,10 +1,13 @@
 # Rider — Transport & Hébergement (DJ Pirate)
 
-Contenu retiré de la page publique du rider (section "06 / Setup technique")
-le 2026-09-07 : le rider hospitality complet fixait un plancher de
-négociation avant tout échange avec les promoteurs. Conservé ici pour
-réutilisation ultérieure (ex. export PDF envoyé après premier contact).
-Ce fichier n'est pas importé ni rendu par l'application.
+Historique :
+- 2026-09-07 : retiré de la page publique du rider (le rider hospitality
+  complet fixait un plancher de négociation avant tout échange avec les
+  promoteurs).
+- 2026-09-08 : réintégré dans la section rider sous forme d'un bloc « VHR »
+  (voir `rider.vhr` dans `data/clients/dj-pirate.ts`). La source de vérité
+  du contenu affiché est désormais la config ; ce fichier reste une archive
+  de référence (ex. export PDF).
 
 ## Transport
 

@@ -375,7 +375,28 @@ const piratePressKit: PressKitConfig = {
           "Support ordinateur"
         ]
       }
-    ]
+    ],
+    "vhr": {
+      "eyebrow": "VHR",
+      "title": "Voyage &\nhébergement.",
+      "groups": [
+        {
+          "title": "Transport",
+          "items": [
+            "1 ou 2 billets aller-retour SNCF en 1re classe depuis Paris, modifiables et remboursables.",
+            "Réservation électronique, bagage cabine inclus et Fast Track si disponible.",
+            "Horaires et e-billets transmis 5 jours avant le show ; transport et modifications nécessaires pris en charge par le promoteur."
+          ]
+        },
+        {
+          "title": "Hébergement",
+          "items": [
+            "1 chambre double dans un hôtel à proximité directe du lieu du show.",
+            "Petit-déjeuner inclus et accès à une salle de sport."
+          ]
+        }
+      ]
+    }
   },
   "press": {
     "eyebrow": "07 / Ressources presse",

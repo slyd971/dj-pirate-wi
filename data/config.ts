@@ -264,6 +264,14 @@ export type PressKitConfig = {
       title: string;
       items: string[];
     }>;
+    vhr?: {
+      eyebrow?: string;
+      title: string;
+      groups: Array<{
+        title: string;
+        items: string[];
+      }>;
+    };
   };
   press?: {
     eyebrow: string;
