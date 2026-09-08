@@ -379,11 +379,11 @@ function HeroVariantBody({
           ) : (
             <div className="h-full w-full bg-[var(--pk-bg)]" />
           )}
-          <div className="absolute inset-0 bg-black/25" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgb(var(--pk-accent-rgb)/0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.05),transparent_24%)]" />
-          <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:34px_34px]" />
+          <div className="absolute inset-0 bg-black/12" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgb(var(--pk-accent-rgb)/0.14),transparent_30%)]" />
+          <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:34px_34px]" />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--pk-bg)] via-transparent to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/70 via-black/35 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/72 via-black/38 to-transparent" />
         </div>
 
         <div
