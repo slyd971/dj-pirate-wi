@@ -184,11 +184,11 @@ const piratePressKit: PressKitConfig = {
       "description": "Du Hip-Hop, R&B et Trap aux sonorités House, Pirate navigue entre culture urbaine et musique électronique avec une signature pensée pour le dancefloor.",
       "layout": "showcase",
       "image": {
-        "src": "/pirate/hero/pirate-hero-yellow.png",
+        "src": "/pirate/hero/pirate-hero-yellow-mobile.png",
         "alt": "DJ Pirate en veste bleue et lunettes de soleil",
         "badge": "DJ PIRATE",
         "caption": "Des Caraïbes aux scènes européennes",
-        "position": "center 57%"
+        "position": "center 22%"
       },
       "ctas": [
         {

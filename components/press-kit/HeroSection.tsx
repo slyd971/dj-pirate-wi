@@ -267,7 +267,7 @@ function HeroVariantBody({
               src={hero.image.src}
               alt={hero.image.alt}
               className="h-full w-full object-cover"
-              style={{ objectPosition: hero.image.position ?? "center" }}
+              style={{ height: "100%", objectPosition: hero.image.position ?? "center" }}
             />
           ) : (
             <div className="h-full w-full bg-[var(--pk-bg)]" />
@@ -374,7 +374,7 @@ function HeroVariantBody({
               src={hero.image.src}
               alt={hero.image.alt}
               className="h-full w-full object-cover"
-              style={{ objectPosition: hero.image.position ?? "center" }}
+              style={{ height: "100%", objectPosition: hero.image.position ?? "center" }}
             />
           ) : (
             <div className="h-full w-full bg-[var(--pk-bg)]" />
