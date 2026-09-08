@@ -254,7 +254,7 @@ const piratePressKit: PressKitConfig = {
   "clubs": {
     "eyebrow": "02 / Références",
     "title": "De la Martinique aux\nscènes européennes.",
-    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes, avec 9 ans d'expérience derrière les platines.",
+    "description": "Un parcours entre festivals, clubs et soirées afro-caribéennes, avec 10 ans d'expérience derrière les platines.",
     "regions": [
       {
         "title": "Festival & Caraïbes",
