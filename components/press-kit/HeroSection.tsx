@@ -440,7 +440,7 @@ function HeroVariantBody({
           </div>
 
           {socialsPosition === "before-stats" && socialLinks}
-          {hasStats && !compactMobile && (
+          {hasStats && (
             <div className={`mt-8 grid gap-3 md:mt-10 md:gap-4 ${statGridClass}`}>
               {hero.stats.map((stat) => (
                 <div
