@@ -85,8 +85,8 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
       }`}
     >
       <div
-        className={`mx-auto flex max-w-[1720px] items-center justify-between px-4 transition-all duration-300 md:px-10 ${
-          isHeaderCompact ? "h-[58px] md:h-[68px]" : "h-[68px] md:h-[80px]"
+        className={`mx-auto flex max-w-[1720px] items-center justify-between px-3 transition-all duration-300 sm:px-4 md:px-10 ${
+          isHeaderCompact ? "h-[58px] md:h-[68px]" : "h-[58px] md:h-[80px]"
         }`}
       >
         <div className="flex min-w-0 items-center gap-2 md:gap-3">
@@ -94,8 +94,8 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
             <div
               className={`flex items-center overflow-hidden transition-all duration-300 ${
                 isHeaderCompact
-                  ? "h-8 w-[128px] md:h-9 md:w-[152px]"
-                  : "h-10 w-[146px] md:h-11 md:w-[172px]"
+                  ? "h-8 w-[92px] md:h-9 md:w-[152px]"
+                  : "h-8 w-[92px] md:h-11 md:w-[172px]"
               }`}
             >
               {hasLogoImage ? (
@@ -133,7 +133,7 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
           </div>
         </div>
 
-        <div className="flex items-center gap-3 md:gap-6 xl:gap-8">
+        <div className="flex items-center gap-2 md:gap-6 xl:gap-8">
           <nav className="hidden items-center gap-7 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/76 lg:flex xl:gap-8">
             {navigation.items.map((item) => (
               <a key={item.href} href={item.href} className="transition hover:text-white">
@@ -147,8 +147,8 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
             aria-label={`${navigation.cta.label} (menu compact)`}
             className={`inline-flex rounded-full bg-[var(--pk-accent)] font-semibold uppercase text-white transition-all duration-300 hover:bg-[var(--pk-accent-strong)] lg:hidden ${
               isHeaderCompact
-                ? "px-3 py-2 text-[9px] tracking-[0.16em]"
-                : "px-3 py-2.5 text-[10px] tracking-[0.2em] sm:px-4"
+                ? "px-2.5 py-2 text-[9px] tracking-[0.08em]"
+                : "px-2.5 py-2 text-[9px] tracking-[0.08em] sm:px-4 sm:py-2.5 sm:text-[10px] sm:tracking-[0.2em]"
             }`}
           >
             {navigation.cta.label}
@@ -168,7 +168,7 @@ export function Header({ artist, navigation, ui, homeHref = "/" }: HeaderProps) 
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 lg:hidden"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 md:h-10 md:w-10 lg:hidden"
             aria-label={menuOpen ? ui.closeMenuLabel : ui.openMenuLabel}
           >
             {menuOpen ? (
