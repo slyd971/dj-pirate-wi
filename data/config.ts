@@ -264,6 +264,8 @@ export type PressKitConfig = {
       title: string;
       items: string[];
     }>;
+    /** Masque la phrase "Rider transport et hébergement communiqué sur demande". */
+    hideHospitalityNote?: boolean;
     vhr?: {
       eyebrow?: string;
       title: string;

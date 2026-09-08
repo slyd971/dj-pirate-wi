@@ -87,7 +87,7 @@ export function RiderSection({ rider }: RiderSectionProps) {
               ))}
             </div>
           </div>
-        ) : (
+        ) : rider.hideHospitalityNote ? null : (
           <p className="mt-6 text-sm leading-6 text-white/58 md:mt-8 md:text-base">
             Rider transport et hébergement communiqué sur demande.{" "}
             <a
