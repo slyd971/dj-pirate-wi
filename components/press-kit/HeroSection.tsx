@@ -379,18 +379,19 @@ function HeroVariantBody({
           ) : (
             <div className="h-full w-full bg-[var(--pk-bg)]" />
           )}
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgb(var(--pk-accent-rgb)/0.22),transparent_28%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.08),transparent_24%),radial-gradient(circle_at_50%_100%,rgb(var(--pk-accent-rgb)/0.12),transparent_32%)]" />
-          <div className="absolute inset-0 opacity-15 [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:34px_34px]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--pk-bg)] via-black/30 to-black/20" />
+          <div className="absolute inset-0 bg-black/25" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgb(var(--pk-accent-rgb)/0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.05),transparent_24%)]" />
+          <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:34px_34px]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--pk-bg)] via-transparent to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/70 via-black/35 to-transparent" />
         </div>
 
         <div
           className={`relative mx-auto flex min-h-[90svh] max-w-7xl flex-col justify-center px-4 py-10 md:min-h-[84svh] md:px-6 md:py-12 lg:min-h-[82svh] lg:justify-start lg:pt-20 lg:pb-10 ${
-            compactMobile ? "items-center justify-end pb-14 text-center md:items-stretch md:justify-start md:pb-10 md:text-left" : ""
+            compactMobile ? "items-center justify-end pb-12 text-center md:items-stretch md:justify-start md:pb-10 md:text-left" : ""
           }`}
         >
-          <div className={`w-full max-w-3xl ${compactMobile ? "flex flex-col items-center md:block" : ""}`}>
+          <div className={`w-full max-w-3xl ${compactMobile ? "flex flex-1 flex-col items-center pt-[30vh] md:block md:flex-none md:pt-0" : ""}`}>
             {hasEyebrow && !compactMobile && (
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.22em] text-white/75 backdrop-blur-md md:px-4 md:py-2 md:text-[11px] md:tracking-[0.28em]">
                 <Disc3 className="h-3 w-3 text-[var(--pk-accent)] md:h-3.5 md:w-3.5" />
@@ -400,7 +401,9 @@ function HeroVariantBody({
 
             <h1 className="mt-5 text-[2.9rem] font-black uppercase leading-[0.88] tracking-tight text-white sm:text-6xl md:mt-7 md:text-7xl xl:text-[7.4rem]">
               {hero.title}
-              <span className="mt-2 block text-[var(--pk-accent)] md:mt-3">{hero.accent}</span>
+              {hero.accent && (
+                <span className="mt-2 block text-[var(--pk-accent)] md:mt-3">{hero.accent}</span>
+              )}
             </h1>
 
             {hero.genreLine && (
@@ -415,7 +418,7 @@ function HeroVariantBody({
               </p>
             )}
 
-            <div className={`mt-7 flex flex-wrap gap-2.5 md:mt-9 md:gap-3 ${compactMobile ? "justify-center md:justify-start" : ""}`}>
+            <div className={`mt-7 flex flex-wrap gap-2.5 md:mt-9 md:gap-3 ${compactMobile ? "mt-auto justify-center pt-8 md:mt-9 md:justify-start md:pt-0" : ""}`}>
               {hero.ctas.map((cta) => (
                 <a
                   key={cta.href}
