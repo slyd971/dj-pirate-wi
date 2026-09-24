@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import kitStyles from "@/components/press-kit/kit.module.css";
 import { AboutSection } from "@/components/press-kit/AboutSection";
 import { BrandsSection } from "@/components/press-kit/BrandsSection";
 import { ClubsSection } from "@/components/press-kit/ClubsSection";
@@ -128,7 +129,7 @@ export default async function Home({ params, searchParams }: HomeProps) {
     <main
       data-client={client.slug}
       style={{ ...getTemplateStyle(theme), ...getFontStyle(fontPreset) }}
-      className="relative overflow-x-hidden bg-[var(--pk-bg)] text-[var(--pk-text)] selection:bg-[var(--pk-accent)] selection:text-white"
+      className={`${kitStyles.kit} relative overflow-x-hidden bg-[var(--pk-bg)] text-[var(--pk-text)] selection:bg-[var(--pk-accent)] selection:text-white`}
     >
       {showLocalSwitchers && (
         <DevControlPanel

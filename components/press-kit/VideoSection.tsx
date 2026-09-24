@@ -3,6 +3,7 @@
 import { ArrowUpRight, Pause, Play } from "lucide-react";
 import { useRef, useState } from "react";
 import type { PressKitConfig } from "@/data/config";
+import { MobileCarousel } from "./MobileCarousel";
 
 type VideoSectionProps = {
   videos: PressKitConfig["videos"];
@@ -165,7 +166,11 @@ export function VideoSection({ videos, maxItems, headingLevel: Heading = "h2" }:
           ) : null}
         </div>
 
-        <div className="grid items-stretch gap-4 md:grid-cols-3 md:gap-5">
+        <MobileCarousel
+          label={videos.title}
+          onActiveChange={() => pauseOtherVideos("")}
+          className="no-scrollbar -mx-4 flex snap-x snap-mandatory scroll-px-4 items-stretch gap-3 overflow-x-auto px-4 md:mx-0 md:grid md:snap-none md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0"
+        >
           {displayedVideos.map((video) => {
             const hasPoster = Boolean(video.poster);
             const aspectClass = getVideoAspectClass(video);
@@ -174,7 +179,7 @@ export function VideoSection({ videos, maxItems, headingLevel: Heading = "h2" }:
             return (
               <article
                 key={video.id}
-                className="group mx-auto flex h-full w-full max-w-[22rem] flex-col overflow-hidden rounded-[1.3rem] border border-white/10 bg-white/[0.03] shadow-xl shadow-black/20 backdrop-blur-sm transition hover:border-[rgb(var(--pk-accent-rgb)/0.4)] hover:shadow-[0_0_30px_rgb(var(--pk-accent-rgb)/0.14)] md:max-w-none md:rounded-[1.7rem]"
+                className="group flex w-[78%] max-w-[22rem] shrink-0 snap-start flex-col only:mx-auto only:w-full md:mx-auto md:h-full md:w-full overflow-hidden rounded-[1.3rem] border border-white/10 bg-white/[0.03] shadow-xl shadow-black/20 backdrop-blur-sm transition hover:border-[rgb(var(--pk-accent-rgb)/0.4)] hover:shadow-[0_0_30px_rgb(var(--pk-accent-rgb)/0.14)] md:max-w-none md:rounded-[1.7rem]"
               >
                 <div className={`relative ${aspectClass} bg-black`}>
                   {video.source === "youtube" ? (
@@ -224,23 +229,26 @@ export function VideoSection({ videos, maxItems, headingLevel: Heading = "h2" }:
                         }
                       />
 
-                      {activeVideoId !== video.id && (
-                        <button
-                          type="button"
-                          onClick={() => void toggleVideo(video.id)}
-                          aria-label={`Play ${video.title}`}
-                          className="absolute inset-0 z-10 flex items-center justify-center bg-black/10 transition hover:bg-black/20"
-                        >
+                      {/* Stays mounted while playing so a tap on the video pauses it (touch screens have no hover). */}
+                      <button
+                        type="button"
+                        onClick={() => void toggleVideo(video.id)}
+                        aria-label={`${activeVideoId === video.id ? "Pause" : "Play"} ${video.title}`}
+                        className={`absolute inset-0 z-10 flex items-center justify-center transition ${
+                          activeVideoId === video.id ? "" : "bg-black/10 hover:bg-black/20"
+                        }`}
+                      >
+                        {activeVideoId !== video.id && (
                           <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white backdrop-blur-md transition hover:scale-105 hover:border-white/30 hover:bg-[var(--pk-accent)] md:h-16 md:w-16">
                             <Play className="ml-0.5 h-6 w-6 fill-current md:h-7 md:w-7" />
                           </span>
-                        </button>
-                      )}
+                        )}
+                      </button>
 
                       <div
                         className={`absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/90 via-black/75 to-transparent px-3 pb-3 pt-12 transition-opacity duration-300 md:px-4 md:pb-4 ${
                           activeVideoId === video.id
-                            ? "pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100"
+                            ? "pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 [@media(hover:none)]:pointer-events-auto [@media(hover:none)]:opacity-100"
                             : "opacity-100"
                         }`}
                       >
@@ -290,7 +298,7 @@ export function VideoSection({ videos, maxItems, headingLevel: Heading = "h2" }:
               </article>
             );
           })}
-        </div>
+        </MobileCarousel>
       </div>
     </section>
   );

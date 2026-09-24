@@ -9,16 +9,9 @@ export function AboutSection({ about }: AboutSectionProps) {
   const hasSupportingText = Boolean(about.supportingText);
   const showTagsBeforeCopy = !hasSignature && !hasSupportingText;
   const tags = (
-    <div className="mt-6 flex flex-wrap gap-2.5 md:mt-8 md:gap-3">
-      {about.tags.map((tag) => (
-        <div
-          key={tag}
-          className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[9px] uppercase tracking-[0.18em] text-white/60 md:px-4 md:py-2 md:text-[11px] md:tracking-[0.28em]"
-        >
-          {tag}
-        </div>
-      ))}
-    </div>
+    <ul data-pk-list className="mt-6 text-sm uppercase text-white/60 md:mt-8">
+      {about.tags.map((tag) => <li key={tag}>{tag}</li>)}
+    </ul>
   );
 
   return (

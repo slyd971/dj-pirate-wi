@@ -1,4 +1,5 @@
 import type { PressKitConfig } from "@/data/config";
+import { MobileCarousel } from "./MobileCarousel";
 
 type SpotifySectionProps = {
   spotify: PressKitConfig["spotify"];
@@ -35,11 +36,14 @@ export function SpotifySection({ spotify }: SpotifySectionProps) {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-3 md:mt-10 md:gap-6 xl:grid-cols-3">
+        <MobileCarousel
+          label={spotify.title}
+          className="no-scrollbar -mx-4 mt-6 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 md:mx-0 md:mt-10 md:grid md:snap-none md:grid-cols-1 md:gap-6 md:overflow-visible md:px-0 xl:grid-cols-3"
+        >
           {spotify.playlists.map((playlist) => (
             <div
               key={playlist.id}
-              className="group relative w-full overflow-hidden rounded-[1.35rem] border border-white/10 bg-[linear-gradient(180deg,#0b0b0d_0%,#050505_100%)] p-2.5 transition duration-300 hover:border-[rgb(var(--pk-accent-rgb)/0.3)] hover:shadow-[0_0_30px_rgb(var(--pk-accent-rgb)/0.08)] md:rounded-[1.7rem] md:p-4"
+              className="group relative w-[85%] shrink-0 snap-start overflow-hidden only:w-full md:w-full rounded-[1.35rem] border border-white/10 bg-[linear-gradient(180deg,#0b0b0d_0%,#050505_100%)] p-2.5 transition duration-300 hover:border-[rgb(var(--pk-accent-rgb)/0.3)] hover:shadow-[0_0_30px_rgb(var(--pk-accent-rgb)/0.08)] md:rounded-[1.7rem] md:p-4"
             >
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgb(var(--pk-accent-rgb)/0.08),transparent_38%)] opacity-0 transition duration-300 group-hover:opacity-100" />
 
@@ -68,7 +72,7 @@ export function SpotifySection({ spotify }: SpotifySectionProps) {
               </div>
             </div>
           ))}
-        </div>
+        </MobileCarousel>
       </div>
     </section>
   );

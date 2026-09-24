@@ -1,0 +1,61 @@
+/* Shared press-kit finish, applied to every client's main element.
+   Hero layout is left alone: only its KPI strip is restyled here. */
+
+/* 4px corners on cards, buttons and media everywhere outside the hero. */
+.kit :is(button, a)[class*="rounded"]:not(:global(#home) *),
+.kit button > span[class*="rounded"]:not(:global(#home) *),
+.kit :is([class*="rounded-["], [class*="rounded-lg"], [class*="rounded-xl"], [class*="rounded-2xl"], [class*="rounded-3xl"]):not(svg):not(:global(#home) *) {
+  border-radius: 4px;
+}
+
+/* KPI strip: flat cells split by hairlines instead of floating cards. */
+.kit [data-pk-stats] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+}
+.kit [data-pk-stats] > div {
+  min-width: 0;
+  min-height: 0;
+  padding: 1.25rem 0.75rem;
+  border: 0 solid rgb(255 255 255 / 0.08);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+.kit [data-pk-stats] > div:nth-child(even) { border-left-width: 1px; }
+.kit [data-pk-stats] > div:nth-child(n+3) { border-top-width: 1px; }
+.kit [data-pk-stats] > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.kit [data-pk-stats] > div > :first-child {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  line-height: 1;
+  max-width: 100%;
+}
+.kit [data-pk-stats] > div > :last-child {
+  min-height: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Music styles and similar tag lists: inline, dot-separated. */
+.kit [data-pk-list] { display: flex; flex-wrap: wrap; gap: 0.4rem 0; }
+.kit [data-pk-list] > li { display: inline-flex; align-items: baseline; }
+.kit [data-pk-list] > li:not(:last-child)::after {
+  content: "·";
+  margin-inline: 0.65em;
+}
+
+@media (min-width: 768px) {
+  /* One row, however many KPIs the artist has. */
+  .kit [data-pk-stats] {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .kit [data-pk-stats] > div:nth-child(n) {
+    grid-column: auto;
+    border-top-width: 0;
+    border-left-width: 0;
+  }
+  .kit [data-pk-stats] > div + div { border-left-width: 1px; }
+}
